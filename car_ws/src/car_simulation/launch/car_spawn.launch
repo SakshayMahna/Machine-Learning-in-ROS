@@ -1,0 +1,11 @@
+<launch>
+    <arg name="robot_name"/>
+    <arg name="init_pose"/>
+
+    <param name="robot_description" command="cat $(find prius_description)/urdf/prius.urdf" />
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+    <node pkg="fake_localization" type="fake_localization" name="fake_localization" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="very_inaccurate_odom" args="0 0 0 0 0 0 odom base_link"/>
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf $(arg init_pose) -model $(arg robot_name)"/>
+</launch>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='ASCII'?>
+<sdf version="1.4">
+  <world name="road test">
+    <scene>
+      <ambient>120 120 120 255</ambient>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+        <time>09:30</time>
+      </sky>
+    </scene>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>-70.0 0.0 0 0 0 0</pose>
+      <name>road_1</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>-60.0 0.0 0 0 0 0</pose>
+      <name>road_2</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>-50.0 0.0 0 0 0 0</pose>
+      <name>road_3</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>-40.0 0.0 0 0 0 0</pose>
+      <name>road_4</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>-30.0 0.0 0 0 0 0</pose>
+      <name>road_5</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>-20.0 0.0 0 0 0 0</pose>
+      <name>road_6</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>-10.0 0.0 0 0 0 0</pose>
+      <name>road_7</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>0.0 0.0 0 0 0 0</pose>
+      <name>road_8</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>10.0 0.0 0 0 0 0</pose>
+      <name>road_9</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>20.0 0.0 0 0 0 0</pose>
+      <name>road_10</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>30.0 0.0 0 0 0 0</pose>
+      <name>road_11</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>40.0 0.0 0 0 0 0</pose>
+      <name>road_12</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>50.0 0.0 0 0 0 0</pose>
+      <name>road_13</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>60.0 0.0 0 0 0 0</pose>
+      <name>road_14</name>
+    </include>
+    <include>
+      <uri>model://road_straight</uri>
+      <pose>70.0 0.0 0 0 0 0</pose>
+      <name>road_15</name>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+  </world>
+</sdf>

@@ -1,0 +1,24 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find car_simulation)/worlds/road.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <group ns = "followee">
+    <include file="$(find car_simulation)/launch/car_spawn.launch">
+      <arg name="init_pose" value="-x -65 -y -2.5 -z 0" />
+      <arg name="robot_name"  value="prius_1" />
+    </include>
+  </group>
+
+  <group ns = "follower">
+    <include file="$(find car_simulation)/launch/car_spawn.launch">
+      <arg name="init_pose" value="-x -75 -y -2.5 -z 0" />
+      <arg name="robot_name"  value="prius_2" />
+    </include>
+  </group>
+</launch>
